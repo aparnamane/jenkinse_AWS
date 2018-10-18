@@ -1,11 +1,8 @@
 pipeline {
-    agent any
-    stages {
-        stage('Deploying AWS Stack') {
-          steps {
-            sh 'cp ./scripts/stack-build.sh .'
-            sh './stack-build.sh'
-          }
-        }     
-    }
-}
+    stage('Deploying AWS Stack') {
+      steps {
+        sh 'cp ./scripts/stack-build.sh .'
+        sh './stack-build.sh'
+      }
+    }     
+} 
