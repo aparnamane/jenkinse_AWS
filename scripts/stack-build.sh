@@ -1,6 +1,6 @@
 #!/bin/bash -ex
 
-$STACKNAME = teststack1
+$STACKNAME="teststack1"
 
 echo "--- Checking if stacks $STACKNAME is exist"
 aws cloudformation describe-stacks --region ap-southeast-2 --stack-name $STACKNAME
