@@ -1,6 +1,7 @@
 #!/bin/sh
 
-STACKNAME="teststack1"
+source parameters
+echo $STACKNAME
 
 echo "--- Checking if stacks $STACKNAME is exist"
 aws cloudformation describe-stacks --region ap-southeast-2 --stack-name $STACKNAME
