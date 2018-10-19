@@ -1,6 +1,6 @@
 #!/bin/sh
 
-source parameters
+source ./parameters
 echo $STACKNAME
 
 echo "--- Checking if stacks $STACKNAME is exist"
